@@ -12,7 +12,7 @@ export default function Home() {
     script.src = '/js/particles.js';
     script.async = true;
     script.onload = () => {
-      particlesJS('particles-js',  {
+      particlesJS('particles-js', {
         "particles": {
           "number": {
             "value": 100,
@@ -138,6 +138,11 @@ export default function Home() {
   return (
     <>
       <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;400;700;900&display=swap"
+          rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Vina+Sans&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet" />
       </Head>
       <Script src="js/main.js" />
       <section id="particles-js">
