@@ -16,7 +16,6 @@
 }
 
 #particles-js {
-  min-height: 100vh;
   background-color: #080d19;
   position: absolute;
   width: 100vw;
@@ -367,6 +366,10 @@
 
 }
 
+#bar {
+  display: none;
+}
+
 #work::after {
   content: "";
   background-image: url("../../public/images/img1.jpg");
@@ -374,7 +377,7 @@
   background-size: cover;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   position: absolute;
   opacity: 0.5;

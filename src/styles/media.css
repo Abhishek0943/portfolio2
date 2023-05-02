@@ -130,36 +130,68 @@
     }
 }
 
+@media (max-width:700px) {
+    #work::after {
+        background-attachment: fixed;
+    }
+
+    #work {
+        height: auto;
+    }
+
+    .cardCon {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .cardCon:last-child {
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width:650px) {
-    .hero_nav_contaner ul {
-        display: none;
-    }
-
-    .hero_btn_con {
-        display: none;
-    }
-
     .hero_heading {
-        padding: 10px;
         font-size: 40px;
-        padding-bottom: 20px;
-        margin: 40px auto 0px auto;
+        padding-bottom: 10px;
+    }
+
+    #menu_list {
+        /* display: none; */
+    }
+
+    #menu_list {
+        position: absolute;
+        flex-direction: column;
+        top: 61px;
+        width: 100%;
+        height: calc(100vh - 61px);
+        background-color: #080d19;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: all 0.7s ease-in-out;
+        transform: translateX(200%);
+    }
+
+    #menu_list li {
+        font-size: 30px;
+    }
+
+    #bar {
+        display: flex;
     }
 
     .hero_sub_heading {
         max-width: unset;
-        font-size: 20px;
-
+        margin-top: 10px;
+        margin-bottom: 40px;
     }
 
-
     .hero_para {
-        color: #fff;
-        padding: 50px 40px 40px 40px;
         font-size: 18px;
-        margin: auto;
-        font-family: lato;
-        text-align: center;
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-bottom: 15px;
     }
 
     .hero_btn_box {
@@ -167,6 +199,7 @@
         padding: 15px 0px 30px 0px;
         flex-direction: column;
         align-items: center;
+        margin: unset;
     }
 
     .hire {
@@ -182,6 +215,16 @@
         font-size: 18px;
     }
 
+    .line {
+        display: none !important;
+    }
+
+    .box {
+        width: 100%;
+        padding: 100px 50px !important;
+        left: 0px !important;
+    }
+
     .aboutTitle {
         font-size: 40px;
     }
@@ -194,52 +237,18 @@
         font-size: 20px;
     }
 
-    .stackDivContaner {
-        max-width: unset;
-        width: 100vw;
-        margin: auto;
-
+    #projectHeading {
+        padding: 20px 0px 0px 20px;
     }
 
     .stackDiv {
-        height: auto !important;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
     }
 
-    #projectHeading {
-        font-size: 40px;
+    .projectImg {
+        margin: auto;
     }
 
-    .projectNo {
-        font-size: 50px;
-
-    }
-
-    .projectName {
-        font-size: 25px;
-
-    }
-
-    .workHeading {
-        font-size: 45px;
-
-    }
-
-    .workDis {
-        padding: 0px 20px;
-        font-size: 18px;
-    }
-
-    .cardCon {
-        gap: 5%;
-        margin-top: 50px;
-        padding: 10px 30px;
-    }
-
-    .cardDis {
-        color: #000000;
-        font-family: lato;
-        text-align: center;
-        font-size: 16px;
-        padding: 10px 10px 10px 20px;
-    }
 }

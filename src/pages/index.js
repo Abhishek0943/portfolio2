@@ -145,6 +145,8 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet" />
       </Head>
       <Script src="js/main.js" />
+      <Script src="https://kit.fontawesome.com/98599e6dbb.js" />
+
       <section id="particles-js">
 
 
@@ -155,15 +157,17 @@ export default function Home() {
             <div className="hero_logo">
               abhitechie
             </div>
-            <ul>
+            <ul id='menu_list'>
               <li>Home</li>
               <li>Servies</li>
               <li>Contact</li>
               <li>About</li>
             </ul>
-            <div className="hero_btn_con">
-              <button className="btnOne">LogIn</button>
-              <button className="btnTwo">SingIn</button>
+            <div id='bar' style={{  flexDirection: "column", gap: "4px", paddingRight: "10px" }} >
+              <div style={{ background: "#fff", height: "5px", width: "30px", borderRadius: "5px" }}></div>
+              <div style={{ background: "#fff", height: "5px", width: "30px", borderRadius: "5px" }}></div>
+              <div style={{ background: "#fff", height: "5px", width: "30px", borderRadius: "5px" }}></div>
+
             </div>
           </div>
         </nav>
